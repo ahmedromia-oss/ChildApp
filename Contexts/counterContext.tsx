@@ -1,5 +1,5 @@
-import { useCounter } from "@/Hooks/useCounter";
 import { createContext, ReactNode } from "react";
+import { useCounter } from "../Hooks/useCounter";
 interface CounterProviderProps {
   children: ReactNode;
   value: number;

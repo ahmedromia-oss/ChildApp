@@ -1,6 +1,6 @@
-import { CoutnerContext } from "@/Contexts/counterContext";
 import React, { useContext } from "react";
 import { Button, StyleSheet, Text, View } from "react-native";
+import { CoutnerContext } from "../Contexts/counterContext";
 
 const Counter = () => {
   const { counter, add } = useContext(CoutnerContext);
