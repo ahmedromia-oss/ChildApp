@@ -2,6 +2,17 @@
   "name": "child-app",
   "main": "expo-router/entry",
   "version": "1.0.0",
+  "peerDependencies": {
+    "expo-router": "*",
+    "react": "*",
+    "react-native": "*"
+  },
+  "exports": {
+    ".": {
+      "import": "./package-exports.js",
+      "require": "./package-exports.js"
+    }
+  },
   "scripts": {
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",
