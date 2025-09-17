@@ -5,5 +5,8 @@ export const useCounter = (start: number) => {
   const add = () => {
     setcoutner(counter + 1);
   };
-  return { add, counter };
+  const SetCounter = (value: number) => {
+    setcoutner(value);
+  };
+  return { add, counter, SetCounter };
 };
