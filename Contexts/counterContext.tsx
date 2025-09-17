@@ -4,7 +4,7 @@ interface CounterProviderProps {
   children: ReactNode;
   value: number;
 }
-export const CoutnerContext = createContext<{
+export const CounterContext = createContext<{
   counter: number;
   add: any;
   SetCounter: any;
@@ -19,9 +19,9 @@ const CounterProvider: React.FC<CounterProviderProps> = ({
 }) => {
   const { counter, add, SetCounter } = useCounter(value);
   return (
-    <CoutnerContext.Provider value={{ counter, add, SetCounter }}>
+    <CounterContext.Provider value={{ counter, add, SetCounter }}>
       {children}
-    </CoutnerContext.Provider>
+    </CounterContext.Provider>
   );
 };
 export default CounterProvider;
