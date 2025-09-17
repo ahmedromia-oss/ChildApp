@@ -1,7 +1,6 @@
 // package-exports.js - This is what people get when they install your package
 export {
-    default as CounterProvider,
-    CoutnerContext
+    CounterContext, default as CounterProvider
 } from "./Contexts/counterContext";
 // Export whatever you want to share
 
